@@ -36,7 +36,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-### Level 2: Multiple Search Categories (Optional)
+### Level 2: Multiple Search Categories
 
 * Complete all of Level 1 criteria.
 
@@ -56,10 +56,8 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 - - -
 
-**Good luck!**
+
 
 - - -
 
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+### Alicia Ly
