@@ -11,8 +11,8 @@ var tablebody = d3.select("tbody");
 var inputElement = d3.select("#datetime");
 
 // Creating a function to show the table 
-function infoTable() {
-    tableData.map(data => {
+function infoTable(tableData2) {
+    tableData2.map(data => {
 
         // Make new row
         var row = tablebody.append("tr");
@@ -31,11 +31,13 @@ function infoTable() {
 };
 
 // Displaying the table
-infoTable();
+infoTable(tableData);
 
 // Create event handlers
 var button = d3.select("#filter-btn");
+var form = d3.select("#form");
 
+form.on("submit", handleClick);
 button.on("click", handleClick);
 
 function handleClick() {
@@ -55,6 +57,8 @@ function handleClick() {
     var filteredData = tableData.filter(data => data.datetime === inputValue);
   
     console.log(filteredData);
+    tablebody.text("");
+    infoTable(filteredData);
 
 };
 button.on("click", handleClick);
