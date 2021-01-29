@@ -1,3 +1,4 @@
+
 // from data.js
 var tableData = data;
 
@@ -8,7 +9,6 @@ var tableData = data;
 var tablehead = d3.select("thead");
 var tablebody = d3.select("tbody");
 
-var inputElement = d3.select("#datetime");
 
 // Creating a function to show the table 
 function infoTable(tableData2) {
@@ -37,10 +37,12 @@ infoTable(tableData);
 var button = d3.select("#filter-btn");
 var form = d3.select("#form");
 
-form.on("submit", handleClick);
-button.on("click", handleClick);
 
-function handleClick() {
+button.on("click", runEnter);
+form.on("submit",runEnter);
+
+
+function runEnter() {
     console.log("A button was clicked!");
 
     // Prevent the page from refreshing
@@ -48,51 +50,32 @@ function handleClick() {
     
     // Select the input element and get the raw HTML node
     var inputElement = d3.select("#datetime");
-  
-    // Get the value property of the input element
     var inputValue = inputElement.property("value");
-  
-    console.log(inputValue);
+    var inputCity = d3.select("#cityname");
+    var inputCityValue = inputCity.property("value");
+    var inputState = d3.select("#statename");
+    var inputStateValue = inputState.property("value");
+    var inputCountry = d3.selection("#countryshortcut");
+    var inputCvalue = inputCountry.property("value");
+    var inputShape = d3.select("#shapename");
+    var inputShapeValue = inputShape.property("value");
+
+    console.log(inputShapeValue);
    
     var filteredData = tableData.filter(data => data.datetime === inputValue);
-  
-    console.log(filteredData);
+    var filteredData2 = tableData.filter(data => data.city === inputCityValue);
+    var filteredData3 = tableData.filter(data => data.state === inputStateValue);
+    var filteredData4 = tableData.filter(data => data.country === inputCvalue);
+    var filteredData5 = tableData.filter(data => data.shape === inputShapeValue);
+
     tablebody.text("");
     infoTable(filteredData);
+    infoTable(filteredData2);
+    infoTable(filteredData3);
+    infoTable(filteredData4);
+    infoTable(filteredData5);
 
 };
-button.on("click", handleClick);
 
 
-//////////////////////////////////////////////////////////
-
-// Create event handlers
-var button1 = d3.select("#filter-btn");
-var form1 = d3.select("#form");
-
-form.on("submit", handleClick1);
-button.on("click", handleClick1);
-
-function handleClick1() {
-    console.log("A button was clicked!");
-
-    // Prevent the page from refreshing
-    d3.event.preventDefault();
-    
-    // Select the input element and get the raw HTML node
-    var inputElement = d3.select("#datetime");
-  
-    // Get the value property of the input element
-    var inputText = inputElement.property("text");
-  
-    console.log(inputValue);
-   
-    var filteredData = tableData.filter(data => data.city === inputValue);
-  
-    console.log(filteredData);
-    tablebody.text("");
-    infoTable(filteredData);
-
-};
-button.on("click", handleClick);
 
