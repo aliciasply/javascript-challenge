@@ -24,7 +24,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 ### Level 1: Automatic Table and Date Search
 
 
-![FilterByDateTime](images/all-data.png)
+![FilterByDateTime](Images/filter-datetime.png)
 
 * Making a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` 
 
@@ -32,7 +32,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ### Level 2: Multiple Search Categories
 
-![FilterByDateTime](images/all-data.png)
+![FilterByShape](Images/multi-filter.png)
 
 * Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
 
