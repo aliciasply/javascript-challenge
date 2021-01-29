@@ -10,8 +10,21 @@ That's why we are hiring you. We need you to write code that will create a table
 
 You can handle this... right? The planet Earth needs to know what we have found!
 
+# Technologies/Libraries
+
+- HTML
+
+- JavaScript
+
+- D3.js
+
+- CSS
+
 
 ### Level 1: Automatic Table and Date Search
+
+
+![FilterByDateTime](images/all-data.png)
 
 * Making a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` 
 
@@ -19,7 +32,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ### Level 2: Multiple Search Categories
 
-* Complete all of Level 1 criteria.
+![FilterByDateTime](images/all-data.png)
 
 * Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
 
