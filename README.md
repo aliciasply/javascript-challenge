@@ -24,7 +24,7 @@ Therefore, I write codes that will create a table dynamically based upon a [data
 
 * Made column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` 
 
-* Use a date form in HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+* Used a date form in HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
 ### Technique 2: Multiple Search Categories
 
