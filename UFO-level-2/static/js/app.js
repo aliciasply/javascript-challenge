@@ -55,7 +55,7 @@ function runEnter() {
     var inputCityValue = inputCity.property("value");
     var inputState = d3.select("#statename");
     var inputStateValue = inputState.property("value");
-    var inputCountry = d3.selection("#countryshortcut");
+    var inputCountry = d3.select("#countryshortcut");
     var inputCvalue = inputCountry.property("value");
     var inputShape = d3.select("#shapename");
     var inputShapeValue = inputShape.property("value");
